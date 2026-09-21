@@ -577,11 +577,19 @@ final class AudioRecorder: NSObject, ObservableObject, SCStreamDelegate {
             videoStream = nil
             await videoOutput?.prepareStop()
             do { try await capture.stopCapture() }
-            catch { if errorMessage == nil { errorMessage = error.localizedDescription } }
+            catch {
+                if !CaptureStreamStop.isAlreadyStopped(error), errorMessage == nil {
+                    errorMessage = error.localizedDescription
+                }
+            }
         }
         for capture in activeStreams {
             do { try await capture.stopCapture() }
-            catch { if errorMessage == nil { errorMessage = error.localizedDescription } }
+            catch {
+                if !CaptureStreamStop.isAlreadyStopped(error), errorMessage == nil {
+                    errorMessage = error.localizedDescription
+                }
+            }
         }
         let captureEnd = videoOutput.map { screen in
             screen.epoch + (CMClockGetTime(CMClockGetHostTimeClock()) - screen.epoch)
@@ -707,10 +715,18 @@ final class AudioRecorder: NSObject, ObservableObject, SCStreamDelegate {
             // Retain the callback's stream until it is compared, so a new
             // stream cannot reuse the old object's address in the meantime.
             let stream = reference.stream
-            guard let self else { return }
-            if self.videoStream === stream {
+            guard let self, self.state == .authorizing || self.isRecording else { return }
+            let source = self.streams.first(where: { $0.value === stream })?.key
+            switch CaptureStreamStop.action(for: error, isVideo: self.videoStream === stream, audioSource: source) {
+            case .ignore:
+                return
+            case .finish:
+                // stop() invalidates recovery and detaches all streams before
+                // awaiting teardown. Sibling stop callbacks cannot reconnect.
+                await self.stop()
+            case .failVideo:
                 await self.stop(error: videoMessage)
-            } else if let source = self.streams.first(where: { $0.value === stream })?.key {
+            case .recover(let source):
                 self.pendingSourceFailures[source] = (stream, message)
             }
         }
