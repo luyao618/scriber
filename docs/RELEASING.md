@@ -45,6 +45,19 @@
 
 Gatekeeper 评估明确拒绝该未公证预览，符合当前发布限制；未实际执行用户首次打开的「仍要打开」流程，也没有修改任何系统安全设置。此次验证不代表换签名后的真实录制权限、完整交互或硬件验收通过。
 
+## 已发布：v0.1.1
+
+[下载带原生图标的 v0.1.1](https://github.com/luyao618/scriber/releases/tag/v0.1.1)。源码提交 `73e3560ea8172b861658837dafd955478b201e8a`，版本标签与合并提交均经 GitHub 验证签名。新增原生应用图标和 `CFBundleIconFile` 配置；录制代码没有变化。[图标设计与重建](../design/icon/README.md)。
+
+ZIP／DMG 的应用文件逐项一致；原生签名、两种界面语言的独立启动和 NSWorkspace 图标读取检查通过。公开 ZIP 下载哈希复核后，已安装到本机 `/Applications/Scriber.app`，安装文件与发布包一致；仅这一份应用运行，历史和设置未变。临时验证副本已清理，旧安装版移入废纸篓。证据：`artifacts/app-icon/verified-release.json`、`installed-verified.json`。
+
+| 下载文件 | SHA256 |
+|---|---|
+| Scriber-0.1.1-macOS-arm64.dmg | `8e509d12f2cf13ab55ca216d872d9f213fa92e2db49e2f6a3e4d0bc450a27e09` |
+| Scriber-0.1.1-macOS-arm64.zip | `d20ad7cf71e733e5676fa35d4563581268d7c6608ddf7c5384ff2ecc199c6000` |
+
+v0.1.0 发布资产继续保留，没有原地替换。预览版的未公证说明及原有硬件验收边界仍然适用。
+
 ## 已发布：v0.1.0
 
 [GitHub Release](https://github.com/luyao618/dayscribe/releases/tag/v0.1.0) 提供首个预览版，源码提交为 `662ddb1b633c3f3901144c17038edda1f7dfeae4`。该提交及版本标签均经 GitHub 验证签名。最终构建再次通过 ZIP／DMG 内容、复制安装、六次语言启动、签名及校验检查；证据在 `artifacts/releases/package-check-q1vprhqy/verified.json`。

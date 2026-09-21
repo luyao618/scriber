@@ -1,8 +1,8 @@
-<p align="center"><img src="docs/media/scriber-mark.svg" width="88" alt="Scriber waveform mark" /></p>
+<p align="center"><img src="design/icon/Scriber-1024.png" width="88" alt="Scriber waveform mark" /></p>
 <h1 align="center">Scriber</h1>
 <p align="center"><a href="README.md">简体中文</a> · <strong>English</strong></p>
 <p align="center"><strong>Record it. Put it to work.</strong><br />Audio and screen recording from your Mac's menu bar. Keep what matters as local files.</p>
-<p align="center"><a href="https://github.com/luyao618/dayscribe/releases/download/v0.1.0/Scriber-0.1.0-macOS-arm64.dmg"><strong>Download for Mac</strong></a> · <a href="docs/USAGE.md">User guide</a> · <a href="https://raw.githubusercontent.com/luyao618/dayscribe/main/video/scriber-intro-en.mp4">One-minute demo (MP4)</a> · <a href="docs/ACCEPTANCE.md">Validation status</a></p>
+<p align="center"><a href="https://github.com/luyao618/scriber/releases/download/v0.1.1/Scriber-0.1.1-macOS-arm64.dmg"><strong>Download for Mac</strong></a> · <a href="docs/USAGE.md">User guide</a> · <a href="https://raw.githubusercontent.com/luyao618/dayscribe/main/video/scriber-intro-en.mp4">One-minute demo (MP4)</a> · <a href="docs/ACCEPTANCE.md">Validation status</a></p>
 
 [![Scriber preview: audio recording, screen capture and local file output](docs/media/scriber-preview.gif)](https://raw.githubusercontent.com/luyao618/dayscribe/main/video/scriber-intro-en.mp4)
 
@@ -38,7 +38,7 @@ Screen recording supports a **selected region, a single window or an entire disp
 
 Requires an **Apple Silicon Mac (M1 or later) running macOS 26+**.
 
-1. **[Download Scriber DMG](https://github.com/luyao618/dayscribe/releases/download/v0.1.0/Scriber-0.1.0-macOS-arm64.dmg).** A ZIP is also available on the [release page](https://github.com/luyao618/dayscribe/releases/tag/v0.1.0).
+1. **[Download Scriber DMG](https://github.com/luyao618/scriber/releases/download/v0.1.1/Scriber-0.1.1-macOS-arm64.dmg).** A ZIP is also available on the [release page](https://github.com/luyao618/scriber/releases/tag/v0.1.1).
 2. Open the DMG and drag **Scriber.app** into **Applications**.
 3. Open Scriber, then click the menu-bar waveform or press **⌥R**.
 
