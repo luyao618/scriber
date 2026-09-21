@@ -1,8 +1,8 @@
-<p align="center"><img src="docs/media/scriber-mark.svg" width="88" alt="Scriber 波形标识" /></p>
+<p align="center"><img src="design/icon/Scriber-1024.png" width="88" alt="Scriber 波形标识" /></p>
 <h1 align="center">Scriber</h1>
 <p align="center"><strong>简体中文</strong> · <a href="README.en.md">English</a></p>
 <p align="center"><strong>录下来，接着用。</strong><br />Mac 菜单栏里的录音与录屏工具，让重要内容变成本地文件。</p>
-<p align="center"><a href="https://github.com/luyao618/dayscribe/releases/download/v0.1.0/Scriber-0.1.0-macOS-arm64.dmg"><strong>下载 Mac 版</strong></a> · <a href="docs/USAGE.md">使用说明</a> · <a href="https://raw.githubusercontent.com/luyao618/dayscribe/main/video/scriber-intro-en.mp4">一分钟演示（MP4）</a> · <a href="docs/ACCEPTANCE.md">验收记录</a></p>
+<p align="center"><a href="https://github.com/luyao618/scriber/releases/download/v0.1.1/Scriber-0.1.1-macOS-arm64.dmg"><strong>下载 Mac 版</strong></a> · <a href="docs/USAGE.md">使用说明</a> · <a href="https://raw.githubusercontent.com/luyao618/dayscribe/main/video/scriber-intro-en.mp4">一分钟演示（MP4）</a> · <a href="docs/ACCEPTANCE.md">验收记录</a></p>
 
 [![Scriber 操作预览：录音、录屏和本地文件输出](docs/media/scriber-preview.gif)](https://raw.githubusercontent.com/luyao618/dayscribe/main/video/scriber-intro-en.mp4)
 
@@ -38,7 +38,7 @@ Scriber 专注录制与文件管理。总结、转录和分析由你选择的其
 
 需要 **Apple Silicon Mac（M1 或更新芯片）与 macOS 26+**。
 
-1. **[下载 Scriber DMG](https://github.com/luyao618/dayscribe/releases/download/v0.1.0/Scriber-0.1.0-macOS-arm64.dmg)。** 也可在 [Release 页面](https://github.com/luyao618/dayscribe/releases/tag/v0.1.0)选择 ZIP。
+1. **[下载 Scriber DMG](https://github.com/luyao618/scriber/releases/download/v0.1.1/Scriber-0.1.1-macOS-arm64.dmg)。** 也可在 [Release 页面](https://github.com/luyao618/scriber/releases/tag/v0.1.1)选择 ZIP。
 2. 打开 DMG，将 **Scriber.app** 拖进 **Applications（应用程序）**。
 3. 打开 Scriber，点击菜单栏波形图标，或按 **⌥R** 开始使用。
 

@@ -4,7 +4,7 @@ Scriber 常驻 macOS 菜单栏，用于随手录下电脑声音、麦克风和�
 
 ## 下载和安装
 
-从 [GitHub Release](https://github.com/luyao618/dayscribe/releases/tag/v0.1.0) 下载 `Scriber-0.1.0-macOS-arm64.dmg`，打开后将 Scriber.app 拖进 Applications（应用程序）。也可下载 ZIP，解压后把应用移到「应用程序」。不要下载用于开发的 Source code 压缩包。安装使用无需 Xcode 或终端命令。
+从 [GitHub Release](https://github.com/luyao618/scriber/releases/tag/v0.1.1) 下载 `Scriber-0.1.1-macOS-arm64.dmg`，打开后将 Scriber.app 拖进 Applications（应用程序）。也可下载 ZIP，解压后把应用移到「应用程序」。不要下载用于开发的 Source code 压缩包。安装使用无需 Xcode 或终端命令。
 
 当前预览版尚未 Apple 公证。若首次打开被系统拦截，请先尝试打开 Scriber，再到 **系统设置 → 隐私与安全性**，为 Scriber 点击 **仍要打开** 并确认；只对来自本仓库且你信任的下载这样操作，无需关闭 Gatekeeper。升级前先退出 Scriber，再替换应用；从以前的本地开发包切换到发布包后，macOS 可能要求重新授权录制权限。
 
